@@ -1,12 +1,11 @@
-a = STDIN.gets
-a = gets
-a = gets
-a = gets
+class Test
 
-while (n = gets.to_i) != 42 do
-  puts n
+  def run (input = STDIN)
+    while (s = input.gets.chomp) != "42" do
+      puts s
+    end
+  end
+
 end
 
-while (s = gets.chomp) != "42" do
-  puts s
-end
+#Test.new.run

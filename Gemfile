@@ -1,4 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rspec'
-gem 'rake'
+group :development, :test do
+  gem 'rspec'
+  gem 'rake'
+  gem 'nokogiri'
+end

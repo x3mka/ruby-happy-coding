@@ -8,7 +8,9 @@ class Fctrl2
   end
 
   def factorial (n)
-
+    f = 1
+    (1..n).each { |m| f *= m }
+    f
   end
 
 end

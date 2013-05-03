@@ -4,4 +4,4 @@ RSpec::Core::RakeTask.new
 
 task :default => [:spec]
 
-#require File.expand_path '../lib/tasks/spoj.rake', __FILE__
+load 'lib/tasks/spoj.rake'

@@ -1,15 +1,15 @@
-require 'nokogiri'
-require 'open-uri'
+require 'code_assistant'
 
 desc 'SPOJ related tasks'
 namespace :spoj do
 
   desc 'start new SPOJ problem'
-  task :new => :environment do |args|
-    problem_code = 'FCTRL'
-    url = "http://www.spoj.com/problems/#{problem_code}/"
+  task :new, :code do |t, args|
+    code = args[:code]
+    parser = Spoj::ProblemParser.new
+    problem = parser.parse_problem code
 
-    doc = Nokogiri::HTML(open(url))
+    puts problem.to_yaml
 
   end
 

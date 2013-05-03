@@ -1,0 +1,8 @@
+class <%= @problem[:code] %>
+
+  def run (input = STDIN)
+  end
+
+end
+
+#<%= @problem[:code] %>.new.run

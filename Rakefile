@@ -4,4 +4,9 @@ RSpec::Core::RakeTask.new
 
 task :default => [:spec]
 
-load 'lib/tasks/spoj.rake'
+#load 'lib/tasks/spoj.rake'
+
+desc 'Bundle install'
+task :bundle_install do
+  sh 'bundle install'
+end

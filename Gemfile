@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'code_assistant', :path => '../code_assistant'
+#gem 'code_assistant', :path => '../code_assistant'
 
 gem 'activesupport'
 gem 'thor'

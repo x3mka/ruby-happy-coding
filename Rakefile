@@ -6,7 +6,3 @@ task :default => [:spec]
 
 #load 'lib/tasks/spoj.rake'
 
-desc 'Bundle install'
-task :bundle_install do
-  sh 'bundle install'
-end

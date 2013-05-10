@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0011_fctrl/fctrl.rb')
+require spoj(11, 'fctrl')
 
 describe Fctrl do
 

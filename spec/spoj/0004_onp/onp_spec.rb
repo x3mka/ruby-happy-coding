@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0004_onp/onp.rb')
+require spoj(4, 'onp')
 
 describe Onp do
 

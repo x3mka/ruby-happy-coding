@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0001_test/test.rb')
+require spoj(1, 'test')
 
 describe Test do
 

@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0042_addrev/addrev.rb')
+require spoj(42, 'addrev')
 
 describe Addrev do
 

@@ -5,14 +5,15 @@ RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
   config.run_all_when_everything_filtered = true
   config.filter_run :focus
+  config.fail_fast = true
 end
 
 APP_ROOT = File.expand_path('../../', __FILE__)
 SPOJ_ROOT = File.join(APP_ROOT, 'spoj')
 END_OF_LINE = "\n"
 
-def spoj (task)
-  File.join(SPOJ_ROOT, task)
+def spoj (number, code)
+  File.join(SPOJ_ROOT, "%04d_%s/%s.rb" % [number, code, code])
 end
 
 def run(input)

@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0024_fctrl2/fctrl2.rb')
+require spoj(24, 'fctrl2')
 
 describe Fctrl2 do
 

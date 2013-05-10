@@ -1,5 +1,5 @@
 require 'spec_helper'
-require spoj('0002_prime1/prime1.rb')
+require spoj(2, 'prime1')
 
 describe Prime1 do
 
